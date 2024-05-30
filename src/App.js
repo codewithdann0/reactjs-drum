@@ -38,12 +38,8 @@ const App = () => {
     currentAudio.play(); // Play the new audio
   }
 
-  function stopAudio() {
-    if (currentAudio) {
-      currentAudio.pause(); // Pause the currently playing audio
-      currentAudio = null; // Reset the current audio
-    }
-  }
+  
+  
   function handleVolumeChange(event) {
     const newVolume = event.target.value;
     setVolume(newVolume);
